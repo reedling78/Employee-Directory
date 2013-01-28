@@ -193,40 +193,56 @@ o.Views.ResultsView = Backbone.View.extend({
 
 o.Views.DefaultView = Backbone.View.extend({
 	initialize: function(){
-		
 	},
 	el: $('li.default'),
 	events : {
 		'click #submitvote': 'submit',
 		'click #viewresults': 'viewresults',
-		'click li>a': 'select'
+		'click li>div': 'select'
 	},
 	submit: function(){
-		var s = $('form a.selected').attr('data-val');
+		var s = $('form div.selected').attr('data-val');
 
 		if(s != undefined){
 			o.voteresults.addVote(s);	
-		}
-
-		o.router.navigate('/results', true);
+			o.router.navigate('/results', true);
 		
-		setTimeout(function(){
-			o.router.navigate('/default', true);
-		}, 10000);
+			clearTimeout(o.timer);
+			o.timer = setTimeout(function(){
+				o.router.navigate('/default', true);
+			}, 10000);
+
+		} else {
+
+			$('#error').css('opacity', '1');
+
+			setTimeout(function(){
+				$('#error').animate({
+					opacity: 0,
+				}, 500);
+			}, 3000);
+
+		}
 
 		return false;
 	},
 	select: function(e){
+		clearTimeout(o.timer);
 		this.reset();
 		$(e.currentTarget).addClass('selected');
 		return false;
 	},
 	reset: function(){
-		$('form a').removeClass('selected');
+		$('form div').removeClass('selected');
 	},
 	viewresults: function(){
+
+		clearTimeout(o.timer);
 		o.router.navigate('/results', true);
 		return false;
+	},
+	showError: function(){
+
 	}
 });
 
@@ -300,13 +316,38 @@ o.Models.VoteResults = Backbone.Model.extend({
 
 		return results;
 	},
+	concatenateAllDays: function(){
+		var localStorageKeys = Object.keys(localStorage);
+		var results = this.dailyResultArray();
+
+		//console.log(results);
+		for (var i = 0; i < localStorageKeys.length; i++) {
+			var thisOne = JSON.parse(localStorage.getItem(localStorageKeys[i]));
+
+			for (var key in thisOne) {
+				if (thisOne.hasOwnProperty(key)) {
+
+					for (var k in results) {
+						if (results.hasOwnProperty(k)) {
+							if(results[k].id == thisOne[key].id){
+								results[k].count = results[k].count + thisOne[key].count;
+							}
+						}
+					}
+
+				}
+			}
+		};
+
+		return results;
+	},
 	getPercent: function(){
 		var dateString = this.todaysDateString();
-		var currentCount = localStorage.getItem(dateString);
+		var currentCount = this.concatenateAllDays();
 		var total = 0;
 
 		if (currentCount) {
-			currentCount = JSON.parse(currentCount);
+			currentCount = currentCount;
 		} else {
 			currentCount = this.dailyResultArray();
 		}
@@ -321,7 +362,6 @@ o.Models.VoteResults = Backbone.Model.extend({
 		};
 
 		return currentCount;
-		
 	}
 });
 
@@ -337,7 +377,6 @@ o.FileSystem = {
 				that.setLink();
 			});
 		});
-
 	},
 	createDirectory:function(callback){
 		var that = this;
@@ -375,7 +414,6 @@ o.FileSystem = {
 
 			}, o.FileSystem.errorHandler);
 		}
-		
 	},
 	setLink: function(){
 		var that = this;
@@ -396,8 +434,6 @@ o.FileSystem = {
 
 			}, o.FileSystem.errorHandler);
 		}
-
-
 	},
 	errorHandler: function(err){
 		var msg = 'An error occured: ';

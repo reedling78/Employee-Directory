@@ -4,6 +4,62 @@
 		"selected_items":
 		[
 			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"background-",
+				"background-color"
+			],
+			[
+				"hi",
+				"highPercent"
+			],
+			[
+				"vert",
+				"vertical-align"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"back",
+				"background"
+			],
+			[
+				"backg",
+				"background-position"
+			],
+			[
+				"init",
+				"initialize"
+			],
+			[
+				"new",
+				"newproduct"
+			],
+			[
+				"opin",
+				"opinionTagLine"
+			],
+			[
+				"z",
+				"z-index"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"margin-",
+				"margin-left"
+			],
+			[
+				"no",
+				"no-repeat"
+			],
+			[
 				"list",
 				"list-style"
 			],
@@ -104,20 +160,12 @@
 				"convertTo"
 			],
 			[
-				"margin-",
-				"margin-right"
-			],
-			[
 				"index",
 				"indexOf"
 			],
 			[
 				"rel",
 				"relative"
-			],
-			[
-				"marg",
-				"margin"
 			],
 			[
 				"background",
@@ -136,16 +184,8 @@
 				"border-bottom"
 			],
 			[
-				"back",
-				"background-color"
-			],
-			[
 				"Pho",
 				"PhotoTemplate"
-			],
-			[
-				"init",
-				"initPhotoSwipe"
 			],
 			[
 				"len",
@@ -243,7 +283,7 @@
 			"file": "index.html",
 			"settings":
 			{
-				"buffer_size": 3484,
+				"buffer_size": 6518,
 				"line_ending": "Unix"
 			}
 		},
@@ -251,7 +291,7 @@
 			"file": "js/main.js",
 			"settings":
 			{
-				"buffer_size": 5472,
+				"buffer_size": 10436,
 				"line_ending": "Unix"
 			}
 		},
@@ -259,7 +299,7 @@
 			"file": "css/main.css",
 			"settings":
 			{
-				"buffer_size": 5532,
+				"buffer_size": 11863,
 				"line_ending": "Unix"
 			}
 		},
@@ -267,7 +307,7 @@
 			"file": "js/plugins.js",
 			"settings":
 			{
-				"buffer_size": 3078,
+				"buffer_size": 2714,
 				"line_ending": "Unix"
 			}
 		}
@@ -275,12 +315,12 @@
 	"build_system": "",
 	"command_palette":
 	{
-		"height": 27.0,
+		"height": 267.0,
 		"selected_items":
 		[
 			[
 				"Package Control: ",
-				"Package Control: Install Package"
+				"Package Control: Discover Packages"
 			],
 			[
 				"html",
@@ -308,6 +348,9 @@
 	},
 	"file_history":
 	[
+		"/Users/reed.rizzo/Library/Application Support/Sublime Text 2/Packages/CSSTidy/CSSTidy.sublime-settings",
+		"/Users/reed.rizzo/Developer/Hatco/css/main.css",
+		"/Users/reed.rizzo/Developer/Hatco/js/plugins.js",
 		"/Users/reed.rizzo/Developer/makeup-facebook/default.htm",
 		"/Users/reed.rizzo/Developer/Resource Allocation/.git/config",
 		"/Users/reed.rizzo/Developer/Resource Allocation/public/Scripts/main.js",
@@ -335,7 +378,6 @@
 		"/Users/reed.rizzo/Developer/Facebook Sandbox/default.htm",
 		"/Users/reed.rizzo/Library/Application Support/Sublime Text 2/Packages/User/CSSTidy.sublime-settings",
 		"/Users/reed.rizzo/Developer/Resource Allocation/public/js/sortElements.js",
-		"/Users/reed.rizzo/Library/Application Support/Sublime Text 2/Packages/CSSTidy/CSSTidy.sublime-settings",
 		"/Users/reed.rizzo/Developer/Resource Allocation/public/Styles/custom.css",
 		"/Volumes/KeyLimeTie/Design/Web - Resource Allocation/Web Ready/index.html",
 		"/Volumes/KeyLimeTie/Design/Web - Resource Allocation/Web Ready/Styles/Styles.css",
@@ -430,6 +472,8 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"preload\n",
+			";\n",
 			"getAllData",
 			"getPercent",
 			"addVote",
@@ -555,9 +599,7 @@
 			"simFunctions.SplashPage",
 			"toLowerCase",
 			"changePage",
-			"simActions",
-			"startSplash",
-			"SplashPage"
+			"simActions"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -594,15 +636,15 @@
 					"file": "index.html",
 					"settings":
 					{
-						"buffer_size": 3484,
+						"buffer_size": 6518,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2988,
-								2988
+								1872,
+								1872
 							]
 						],
 						"settings":
@@ -612,7 +654,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 1079.0,
+						"translation.y": 796.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -622,15 +664,15 @@
 					"file": "js/main.js",
 					"settings":
 					{
-						"buffer_size": 5472,
+						"buffer_size": 10436,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1937,
-								1937
+								2425,
+								2425
 							]
 						],
 						"settings":
@@ -639,7 +681,7 @@
 							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
-						"translation.y": 860.0,
+						"translation.y": 1252.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -649,15 +691,15 @@
 					"file": "css/main.css",
 					"settings":
 					{
-						"buffer_size": 5532,
+						"buffer_size": 11863,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2478,
-								2478
+								2583,
+								2583
 							]
 						],
 						"settings":
@@ -667,7 +709,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3297.0,
+						"translation.y": 3579.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -677,15 +719,15 @@
 					"file": "js/plugins.js",
 					"settings":
 					{
-						"buffer_size": 3078,
+						"buffer_size": 2714,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3077,
-								3077
+								907,
+								907
 							]
 						],
 						"settings":
@@ -695,7 +737,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 536.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"

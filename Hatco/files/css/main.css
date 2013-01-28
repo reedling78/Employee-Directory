@@ -126,12 +126,13 @@ ul#stage>li form>ul li{
     background-position: center, center;
 }
 
-ul#stage>li form>ul a{
+ul#stage>li form>ul div{
     display:block;
     width:179px;
     height:179px;
     background-repeat: no-repeat;
     background-position: center, center;
+    cursor:pointer;
 }
 ul#stage li.default .copyone{
     background-image:url('../img/copyone.png');
@@ -147,45 +148,59 @@ ul#stage li.default .copytwo{
     background-position: center, center;
     height:60px;
     margin-top:40px;
+
 }
 
-a.knockyoursocks {
+#error{
+    color:red;
+    position:relative;
+    top:220px;
+   left: -270px;
+font-weight: bold;
+width: 1344px;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    font-size:25px;
+}
+
+div.knockyoursocks {
     background-image:url('../img/knockyoursocks.png');
 }
 
-a.knockyoursocks:hover, .knockyoursocks.selected {
+div.knockyoursocks:hover, .knockyoursocks.selected {
     background-image:url('../img/knockyoursocksHover.png');
 }
 
-a.productquality {
+div.productquality {
     background-image:url('../img/productquality.png');
 }
 
-a.productquality:hover, .productquality.selected {
+div.productquality:hover, .productquality.selected {
     background-image:url('../img/productqualityHover.png');
 }
 
-a.quickship {
+div.quickship {
     background-image:url('../img/quickship.png');
 }
 
-a.quickship:hover, .quickship.selected {
+div.quickship:hover, .quickship.selected {
     background-image:url('../img/quickshipHover.png');
 }
 
-a.newproduct {
+div.newproduct {
     background-image:url('../img/newproduct.png');
 }
 
-a.newproduct:hover, .newproduct.selected {
+div.newproduct:hover, .newproduct.selected {
     background-image:url('../img/newproductHover.png');
 }
 
-a.support {
+div.support {
     background-image:url('../img/support.png');
 }
 
-a.support:hover, .support.selected {
+div.support:hover, .support.selected {
     background-image:url('../img/supportHover.png');
 }
 
@@ -212,6 +227,7 @@ ul#stage>li #submitvote {
     left:50%;
     bottom: -20px;
     margin-left: -615px;
+    cursor:pointer;
 }
 
 ul#stage>li #submitvote:hover {
@@ -239,6 +255,7 @@ ul#stage>li #viewresults {
     margin-left: 220px;
     background-position: center,center;
     background-repeat: no-repeat;
+    cursor:pointer;
 }
 
 ul#stage>li #viewresults:hover, .viewresults { 
@@ -261,6 +278,10 @@ div.percent sup {
     font-size:15px;
 }
 
+.chipStack {
+    width:118px;
+}
+
 .chipStack div {
     height:29px;
     width:81px;
@@ -274,23 +295,23 @@ div.percent sup {
 
 td.knockyoursocks { 
     background-image:url('../img/knockyoursocksResults.png'); 
-    background-position: 49px 5px;
+    background-position: 48px 5px;
 }
 td.productquality { 
     background-image:url('../img/productqualityResults.png'); 
-    background-position: 83px 5px;
+    background-position: 84px 5px;
 }
 td.quickship { 
     background-image:url('../img/quickshipResults.png');
-    background-position: 32px 5px;
+    background-position: 49px 5px;
 }
 td.newproduct { 
     background-image:url('../img/newproductResults.png');
-    background-position: 46px 5px;
+    background-position: 65px 5px;
 }
 td.support { 
     background-image:url('../img/supportResults.png'); 
-    background-position: 32px 5px;
+    background-position: 49px 5px;
 }
 
 li.results table{
@@ -320,14 +341,14 @@ li.results ul{
     position: relative;
     left: 50%;
     top:20px;
-    margin-left: -600px;
+    margin-left: -500px;
 }
 
 li.results ul>li{
     float:left;
     display:block;
     width:200px;
-    margin:20px;
+    margin:0px;
     
 }
 
@@ -346,6 +367,7 @@ ul#stage>li #returntovote {
     margin-left: -590px;
     background-position: center,center;
     background-repeat: no-repeat;
+    cursor:pointer;
 }
 
 ul#stage>li #returntovote:hover, .returntovote { 
@@ -358,7 +380,7 @@ ul#stage li.results .copythree{
     background-position: center, center;
     height:30px;
     margin-top: -20px;
-    margin-left: 40px;
+    margin-left: 22px;
 }
 
 
@@ -471,22 +493,30 @@ div#logo {
     margin-left: -630px;
 }
 
+
 div#character {
-    width:267px;
-    height:288px;
+    width:217px;
+    height:238px;
     background-image:url('../img/billy.png');
+    background-size:217px 238px;
     z-index: 1;
     position:absolute;
     bottom:0px;
-    right:50px;
+    right:-6px;
+}
+
+div#character:hover {
+
+ 
+
 }
 
 
 div#adminLink{
     z-index: 1;
     position: absolute;
-    bottom: 16px;
-    right: 137px;
+    bottom: 10px;
+right: 60px;
     display: block;
     width: 32px;
     height: 20px;
